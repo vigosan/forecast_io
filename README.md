@@ -20,8 +20,8 @@ Or install it yourself as:
 
 ## Configuration
 
-    ForecastIO.configure do |c| 
-        c.api_key = api_key
+    ForecastIO.configure do |c|
+      c.api_key = api_key
     end
 
 ## Usage

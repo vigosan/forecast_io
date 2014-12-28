@@ -10,5 +10,9 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
+  config.after :each do
+    ForecastIO.reset
+  end
+
   config.order = :random
 end

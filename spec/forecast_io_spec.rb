@@ -12,7 +12,7 @@ describe ForecastIO do
 
   describe '.reset' do
     it 'resets the configuration' do
-      expect(ForecastIO.configuration).to receive(:reset).once
+      expect(ForecastIO.configuration).to receive(:reset).at_least(:once)
 
       ForecastIO.reset
     end

@@ -10,10 +10,12 @@ module ForecastIO
 
     def handle_error
       error_class = find_error_class
-      error_class.new(response.status, response.boby)
+      error_class.new(response.status, response.body)
     end
 
     private
+
+    attr_reader :response
 
     def find_error_class
       case response.status
